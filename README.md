@@ -19,7 +19,7 @@ Disk Free (a.k.a ) disk availability
 
       awkscript = "/tmp/520a.sh" 
 
-      trap "rm -f $awkscript" EXIT
+      trap "rm -f $awkscript" EXIT #(a)
 
       cat 'EOF' > $awkscript
 
@@ -28,7 +28,7 @@ Disk Free (a.k.a ) disk availability
        mb = size / 1024; okmb = (int(mb * 100))/100;
        gb = mb / 1024; okgb = (int(gb * 100))/100;
 
-       if ( substr(size, 1, 1) !~ "[0~9]" || substr(size, 2, 1) !~"[0~9]" ){ return size }
+       if ( substr(size, 1, 1) !~ "[0~9]" || substr(size, 2, 1) !~"[0~9]" ){ return size } # (b)
        elif ( mb < 1 ){ return size "K"}
        elif  ( gb < 1 ){return okmb "M"}
        else { return okgb "G"}
@@ -37,7 +37,8 @@ Disk Free (a.k.a ) disk availability
 
       Begin{
 
-         printf "%-37s %10s %7s %7s %8s %-s\n", "FS", "Capacity", "Used", "Avail", "Ratio", "Mount_on"
+         printf "%-37s %10s %7s %7s %8s %-s\n", "FS", "Capacity", "Used", "Avail", "Ratio", "Mount_on" 
+         #(c)
 
       }
 
@@ -51,13 +52,19 @@ Disk Free (a.k.a ) disk availability
       }
       EOF
 
-      df -k | awk -f $awkscript
+      df -k | awk -f $awkscript (d)
 
       exit 0
 
 * Syntax
 
-
+  * (a) rm -f 
+  
+  * (b) substr(size, 1, 1) !~ "[0~9]"
+  
+  * (c) printf "%-37s"
+  
+  * (d) df -k | awk -f 
 
 * Execute Script
 
