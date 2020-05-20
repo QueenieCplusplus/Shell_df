@@ -11,6 +11,20 @@ Disk Free (a.k.a ) disk availability
          /dev/disk1s1   489825072 432330920  31137552    94% 1436221 2447689139    0%   /System/Volumes/Data
          /dev/disk1s4   489825072   2099304  31137552     7%       2 2449125358    0%   /private/var/vm
          map auto_home          0         0         0   100%       0          0  100%   /System/Volumes/Data/home
+         
+         
+         
+         
+         
+      $ df -h | awk '{print $1,$5}' 
+      
+      Filesystem Capacity
+      /dev/disk1s5 42%
+      devfs 100%
+      /dev/disk1s1 94%
+      /dev/disk1s4 7%
+      map 0Bi
+      
    
 * Friendly＿Read Scripts
 
