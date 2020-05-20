@@ -74,6 +74,8 @@ Disk Free (a.k.a ) disk availability
 
   * (a.0) trap
   
+     將事件綁定到腳本的執行環境，參數1 是要執行的指令，參數2 是特定信號 signal 或是 事件 event。
+  
   * (a.1) rm -f
   
   * (b.0) substr(size, start, length) 
