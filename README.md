@@ -64,6 +64,8 @@ Disk Free (a.k.a ) disk availability
   
   * (b.0) substr(size, 1, 1) 
   
+    https://www.wibibi.com/info.php?tid=96 (擷取字串方法)
+  
   * (b.1)!~ 
   
   * (b.2) "[0~9]"
