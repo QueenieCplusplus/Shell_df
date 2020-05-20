@@ -68,7 +68,8 @@ Disk Free (a.k.a ) disk availability
 
 * Execute Script
 
-  df
+
+      $ df
          
          
 
