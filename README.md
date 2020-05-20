@@ -28,7 +28,7 @@ Disk Free (a.k.a ) disk availability
        mb = size / 1024; okmb = (int(mb * 100))/100;
        gb = mb / 1024; okgb = (int(gb * 100))/100;
 
-       if ( substr(size, 1, 1) !~ "[0~9]" || substr(size, 2, 1) !~"[0~9]" ){ return size } # (b)
+       if ( substr(size, 1, 1) !~ "[0~9]" || substr(size, 2, 1) !~"[0~9]" ){ return size } # (b.0) # (b.1) # (b.2)
        elif ( mb < 1 ){ return size "K"}
        elif  ( gb < 1 ){return okmb "M"}
        else { return okgb "G"}
@@ -62,7 +62,11 @@ Disk Free (a.k.a ) disk availability
   
   * (a.1) rm -f
   
-  * (b) substr(size, 1, 1) !~ "[0~9]"
+  * (b.0) substr(size, 1, 1) 
+  
+  * (b.1)!~ 
+  
+  * (b.2) "[0~9]"
   
   * (c) printf "%-37s"
   
