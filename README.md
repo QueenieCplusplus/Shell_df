@@ -19,7 +19,7 @@ Disk Free (a.k.a ) disk availability
 
       awkscript = "/tmp/520a.sh" 
 
-      trap "rm -f $awkscript" EXIT #(a)
+      trap "rm -f $awkscript" EXIT #(a.0) #(a.1)
 
       cat 'EOF' > $awkscript
 
@@ -58,7 +58,9 @@ Disk Free (a.k.a ) disk availability
 
 * Syntax
 
-  * (a) rm -f 
+  * (a.0) trap
+  
+  * (a.1) rm -f
   
   * (b) substr(size, 1, 1) !~ "[0~9]"
   
