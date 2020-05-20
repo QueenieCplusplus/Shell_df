@@ -12,7 +12,7 @@ Disk Free (a.k.a ) disk availability
          /dev/disk1s4   489825072   2099304  31137552     7%       2 2449125358    0%   /private/var/vm
          map auto_home          0         0         0   100%       0          0  100%   /System/Volumes/Data/home
    
-* Read_Friendly Scripts
+* Friendly＿Read Scripts
 
 (to be continued...)
         
