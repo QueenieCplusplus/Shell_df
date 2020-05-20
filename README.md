@@ -86,6 +86,10 @@ Disk Free (a.k.a ) disk availability
   
   * (c) printf "%-37s"
   
+        % means format
+        -37 is a formats definition
+        s means string
+  
   * (d) df -k | awk -f 
 
 * Execute Script
