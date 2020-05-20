@@ -15,6 +15,13 @@ Disk Free (a.k.a ) disk availability
 * Friendly＿Read Scripts
 
 (to be continued...)
+
+
+* Syntax
+
+
+
+* Execute Script
         
          
          
