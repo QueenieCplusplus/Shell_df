@@ -89,6 +89,8 @@ Disk Free (a.k.a ) disk availability
         % means format
         -37 is a formats definition
         s means string
+        
+       https://blog.xuite.net/evan_0412/wretch/169912531-printf%28+%29的使用
   
   * (d) df -k | awk -f 
 
