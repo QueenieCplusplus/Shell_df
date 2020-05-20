@@ -76,7 +76,7 @@ Disk Free (a.k.a ) disk availability
   
   * (a.1) rm -f
   
-  * (b.0) substr(size, 1, 1) 
+  * (b.0) substr(size, start, length) 
   
     https://www.wibibi.com/info.php?tid=96 (擷取字串方法)
   
