@@ -3,7 +3,8 @@ Disk Free (a.k.a ) disk availability
 
 * Bash
 
-     $ df
+      $ df
+         
          Filesystem    512-blocks      Used Available Capacity iused      ifree %iused  Mounted on
          /dev/disk1s5   489825072  21732480  31137552    42%  487329 2448638031    0%   /
          devfs                382       382         0   100%     669          0  100%   /dev
