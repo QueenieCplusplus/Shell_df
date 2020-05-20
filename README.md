@@ -77,6 +77,8 @@ Disk Free (a.k.a ) disk availability
      將事件綁定到腳本的執行環境，參數1 是要執行的指令，參數2 是特定信號 signal 或是 事件 event。如本案例信號是 EXIT。
      
      這個 Trap 指令的優勢是無論在何時何處退出腳本，（即使不在腳本底部），它都能因為正確訊號或是間的聆聽，而在正確時間點出場，接手！
+     
+     假若有人是使用 ctrl-C 臨時退出程序，則此事件為 EXITQUIT (not 正常退出 SIGEXIT)。
   
   * (a.1) rm -f
   
