@@ -84,13 +84,13 @@ Disk Free (a.k.a ) disk availability
   
   * (b.0) substr(size, start, length) 
   
-    https://www.wibibi.com/info.php?tid=96 (擷取字串方法)
+     https://www.wibibi.com/info.php?tid=96 (擷取字串方法)
   
   * (b.1)!~ 
   
   * (b.2) "[0~9]"
   
-   https://github.com/QueenieCplusplus/Shell_echo/blob/master/README.md#0-9
+     https://github.com/QueenieCplusplus/Shell_echo/blob/master/README.md#0-9
   
   * (c) printf "%-37s"
   
