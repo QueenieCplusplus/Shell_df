@@ -90,6 +90,8 @@ Disk Free (a.k.a ) disk availability
   
   * (b.2) "[0~9]"
   
+   https://github.com/QueenieCplusplus/Shell_echo/blob/master/README.md#0-9
+  
   * (c) printf "%-37s"
   
         % means format
